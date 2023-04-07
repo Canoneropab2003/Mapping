@@ -1,0 +1,124 @@
+/* Styles for small screens */
+    @media (max-width: 767px) {
+      /* Adjust font sizes */
+      body {
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      /* Adjust image size and margin */
+      .image-container img {
+        width: 100%;
+        margin: 0;
+      }
+      /* Adjust arrow position */
+      .arrow-container {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    /* Styles for medium screens */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* Adjust font sizes */
+      body {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      /* Adjust container width */
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+      /* Adjust image size and margin */
+      .image-container img {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+    /* Styles for large screens */
+    @media (min-width: 1024px) {
+      /* Adjust font sizes */
+      body {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 32px;
+      }
+      /* Adjust container width */
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      /* Adjust image size and margin */
+      .image-container img {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+	
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: auto;
+		border: 1px solid #ccc;
+		padding: 10px;
+		box-sizing: border-box;
+		}
+		
+	area {
+		outline: none;
+		}
+		
+	.area-hover {
+		position: relative;
+		z-index: 1;
+			cursor: pointer;
+		}
+		
+	.area-hover:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+		}
+		
+	.area-hover:hover::after {
+		content: attr(title);
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		font-size: 0px;
+		padding: 0px;
+		}
+		
+.back-btn {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+border-radius: 30px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+/* Center horizontally and vertically */
+position: absolute;
+ top: 119%;
+  left: 5%;
+transform: translate(-50%, -50%);
+
+/* Add transition effect */
+transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+background-color: #DFFF00;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+transform: translate(-50%, -55%);
+}
+
+	</style>
